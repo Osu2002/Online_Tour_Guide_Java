@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ExploreGuides User Registration</title> <!-- Document title -->
+    <link rel="stylesheet" href="style/style.css">
+
+	<style>
+		body{
+		.backGround{
+			background-image: url("images/sigiri.jpg");
+	      	position: fixed;
+			height: 100%;
+	      	top: 0;
+	      	left: 0;
+	      	width: 100%;
+	      	min-height: 100vh;
+	      	background-repeat: repeat;
+	      	background-size: cover;
+	      	z-index: -1;
+	      	filter: blur(2px);
+	      }
+		}
+	</style>
+</head>
+
+<body style="text-align: center; background-color: #f5f5f5; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+	
+<div class="backGround"></div>
+	<h1 style="color: #333;">User Registration</h1> <!-- Heading for the registration form -->
+
+	<form id="registration-form" action="RegSaveServlet" method="post" style="background-color: #fff; border: 1px solid #ccc; padding: 20px; width: 300px; margin: 0 auto; text-align: left;">
+     <!-- Registration form with styling -->
+     
+		<label for="First_name" style="display: block; margin-bottom: 5px;">First Name:</label>
+		<input type="text" id="fristname" name="fristname" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="Last_name" style="display: block; margin-bottom: 5px;">Last Name:</label>
+		<input type="text" id="lastname" name="lastname" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="NIC" style="display: block; margin-bottom: 5px;">NIC:</label>
+		<input type="text" id="nic" name="nic" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+		<input type="email" id="email" name="email" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
+		<input type="password" id="password" name="password" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="confirm_password" style="display: block; margin-bottom: 5px;">Confirm Password:</label>
+		<input type="password" id="repassword" name="repassword" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="phone" style="display: block; margin-bottom: 5px;">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="birthdate" style="display: block; margin-bottom: 5px;">Date of Birth:</label>
+		<input type="date" id="dob" name="dob" required style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+
+		<label for="country" style="display: block; margin-bottom: 5px;">Country:</label>
+		<select id="country" name="country" style="width: 100%; padding: 5px; margin-bottom: 10px; border: 1px solid #ccc;">
+			<option value="usa">United States</option>
+			<option value="canada">Canada</option>
+			<option value="UK">United Kingdom</option>
+			<option value="LK">Sri Lanka</option>
+			<option value="India">India</option>
+			<!-- Add more options as needed -->
+		</select>
+        <!-- First Name input field -->
+
+        <!-- Similar comments for Last Name, NIC, Email, Password, Confirm Password, Phone Number, Date of Birth, and Country inputs -->
+
+		<label for="newsletter" style="display: block; margin-bottom: 5px;">Subscribe to Newsletter:</label> <!-- Label for the newsletter checkbox --> 
+		<input type="checkbox" id="newsletter" name="newsletter" style="margin-bottom: 10px;">
+        <!-- Newsletter checkbox -->
+
+		<input type="submit" value="Register" style="background-color: #007bff; color: #fff; border: none; padding: 10px 15px; cursor: pointer;">
+		<a href="RegViewServlet" style="text-decoration: none; color: #333; margin-left: 10px;">View</a>
+	</form>
+
+	<script>
+		// JavaScript validation can be added here
+		document.getElementById('registration-form').addEventListener('submit', function (event) {
+			// Add your validation logic here
+			// You can prevent form submission if validation fails
+			alert("Registered");
+		});
+	</script>
+	
+</body>
+
+</html>

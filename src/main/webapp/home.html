@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreGuides</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Links -->
+
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Google Fonts Links -->
+
+
+     <!-- Font Awesome Cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <!-- Font Awesome Cdn -->
+</head>
+<body>
+
+
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="home.html" id="logo"><span>E</span>xplore<span>G</span>uides</a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reg.html">Register</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="payment.html">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+           
+           
+              
+            
+           
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Navbar End -->
+    
+ 
+ 
+
+    <div class="home">
+		<style>
+		body{
+		.backGround{
+			background-image: url("images/galle-1002-.jpg");
+	      	position: fixed;
+			height: 100%;
+	      	top: 0;
+	      	left: 0;
+	      	width: 100%;
+	      	min-height: 100vh;
+	      	background-repeat: repeat;
+	      	background-size: cover;
+	      	z-index: -1;
+	      	filter: blur(2px);
+	      }
+		}
+	</style>
+	<div class="backGround"></div>
+        <div class="content">
+            <h5>Welcome To Sri Lanka</h5>
+            <h5>We Are "ExploreGuides"</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p>Sri Lanka offers a diverse range of experiences, from cultural and historical sites to stunning natural beauty and wildlife, making it an incredible destination for travelers.</p>
+            <a href="book.html">Book Place</a>
+        </div>
+    </div>
+
+
+   
+
+   <!-- Packages Start -->
+   <section class="packages" id="packages">
+      <div class="container">
+         <div class="main-txt">
+            <h1><span>P</span>ACKAGES</h1>
+         </div>
+         
+         <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Sigiriya_In_Sri_Lanka.jpg" alt="">
+                  <div class="card-body">
+                     <h3>Sigiriya</h3>
+                     <p>Sigiriya is an ancient rock fortress with stunning frescoes and beautiful gardens.</p>
+                     <div class="start">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                     </div>
+                     <h6>Price: <strong>$500</strong></h6>
+                     <form action="allInformation.jsp" method="post">
+                    	<input type="hidden" value="LOC-1" name="location">
+                    	<button type="submit" class="btn btn-sm btn-outline-secondary">Why Here?</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Galle fort.jpg" alt="">
+                  <div class="card-body">
+                     <h3>Galle Fort</h3>
+                     <p>A well-preserved Dutch fort in Galle that offers a glimpse into the country's colonial history .</p>
+                     <div class="start">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                     </div>
+                     <h6>Price: <strong>$300</strong></h6>
+                    <form action="allInformation.jsp" method="post">
+                    	<input type="hidden" value="LOC-2" name="location">
+                    	<button type="submit" class="btn btn-sm btn-outline-secondary">Why Here?</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/th (6).jpeg" alt="">
+                  <div class="card-body">
+                     <h3>Nuwara Eliya</h3>
+                     <p>Known as "Little England," this town is famous for its cool climate.</p>
+                     <div class="start">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                     </div>
+                     <h6>Price: <strong>$400</strong></h6>
+                    <form action="allInformation.jsp" method="post">
+                    	<input type="hidden" value="LOC-3" name="location">
+                    	<button type="submit" class="btn btn-sm btn-outline-secondary">Why Here?</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/yala.jpg" alt="">
+                  <div class="card-body">
+                     <h3>Yala National Park</h3>
+                     <p>One of the best places for wildlife enthusiasts.</p>
+                     <div class="start">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                     </div>
+                     <h6>Price: <strong>$600</strong></h6>
+                    <form action="allInformation.jsp" method="post">
+                    	<input type="hidden" value="LOC-4" name="location">
+                    	<button type="submit" class="btn btn-sm btn-outline-secondary">Why Here?</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Anuradhapura.jpg" alt="">
+                  <div class="card-body">
+                     <h3>Anuradhapura</h3>
+                     <p>Ancient cities with preserved ruins,and ancient temples, showcasing Sri Lanka's rich history.</p>
+                     <div class="start">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                     </div>
+                     <h6>Price: <strong>$450</strong></h6>
+                    <form action="allInformation.jsp" method="post">
+                    	<input type="hidden" value="LOC-5" name="location">
+                    	<button type="submit" class="btn btn-sm btn-outline-secondary">Why Here?</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Hikkaduwa-Coral-Reef-III.jpg" alt="">
+                  <div class="card-body">
+                     <h3>Hikkaduwa</h3>
+                     <p>A popular beach town for snorkeling and diving, known for its vibrant underwater world.</p>
+                     <div class="start">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                     </div>
+                     <h6>Price: <strong>$200</strong></h6>
+                    <form action="allInformation.jsp" method="post">
+                    	<input type="hidden" value="LOC-6" name="location">
+                    	<button type="submit" class="btn btn-sm btn-outline-secondary">Why Here?</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Packages End -->
+
+
+
+
+   <!-- Services Start -->
+   <section class="services" id="services">
+    <div class="container">
+      <div class="main-txt" style="padding-top: 10px;">
+        <h1><span>S</span>ervices</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card-body text-center">
+            <h3>Affordable Hotels(if needed)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio, pariatur sit temporibus asperiores beatae!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card-body text-center">
+              <h3>Food And Drinks(if needed)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio, pariatur sit temporibus asperiores beatae!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-bullhorn"></i>
+            <div class="card-body text-center">
+              <h3>Safty Guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio, pariatur sit temporibus asperiores beatae!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-globe-asia"></i>
+            <div class="card-body text-center">
+              <h3>Around The Sri Lanka</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio, pariatur sit temporibus asperiores beatae!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-plane"></i>
+            <div class="card-body text-center">
+            <h3>Fastest Travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio, pariatur sit temporibus asperiores beatae!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-hiking"></i>
+            <div class="card-body text-center">
+            <h3>Adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus distinctio, pariatur sit temporibus asperiores beatae!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Services End -->
+    
+
+
+
+
+   <!-- Gallary Start -->
+   <section class="gallary" id="gallary">
+      <div class="container">
+         <div class="main-txt">
+            <h1><span>G</span>allary</h1>
+         </div>
+         <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Kandy.jpg" alt=""  height="230px">
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/dambulla.jpg" alt="" height="230px">
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Wannago-Sri-Lanka-3-1024x576.jpg" alt=""  height="230px">
+               </div>
+            </div>
+         </div>
+
+         <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/ele.jpeg" alt=""  height="230px">
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/12.jpg" alt="" height="230px">
+               </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/Polonnaruwa.jpg" alt=""  height="230px">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Gallary End -->
+
+
+
+
+
+   <!-- About Start -->
+   <section class="about" id="about">
+      <div class="container">
+         <div class="main-txt" style="padding-top: 30px;">
+            <h1>About <span>Us</span></h1>
+         </div>
+
+         <div class="row" style="margin-top: 50px;">
+
+            <div class="col-md-6 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/about-img.png" alt="">
+               </div>
+            </div>
+
+            <div class="col-md-6 py-3 py-md-0">
+               <h2>How Tour Guide Agency Work Read.</h2>
+               <p>At ExploreGuides, we are passionate about enhancing the way people experience the Sri Lanka. Our journey began with a simple yet profound idea: to make travel more enriching, informative, and enjoyable. With this vision in mind, we have developed a cutting-edge tour guide system that seamlessly blends technology with the art of storytelling. Our team of dedicated experts, from software engineers to historians, has worked tirelessly to create a platform that provides travelers with immersive, personalized, and insightful tours. Whether you're exploring a new city, embarking on an adventure in nature, or delving into the depths of cultural heritage, our tour guide system will be your trusted companion, offering a deeper connection to the places you visit. Join us on this exciting expedition of exploration, where we merge the past, present, and future to craft unforgettable travel experiences.</p>
+               <button id="about-btn">Read More...</button>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- About End -->
+
+
+
+
+<!-- Footer Start -->
+<footer id="footer">
+   <h1><span>T</span>our</h1>
+   <p>Let our experienced tour guides be your compass to extraordinary adventures. We specialize in crafting immersive travel experiences that showcase the hidden gems of each destination. Explore with us and create memories that will last a lifetime.</p>
+   <div class="social-links">
+       <a href="https://twitter.com/your_twitter_profile" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.facebook.com/profile.php?id=100082561964715&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+       <a href="https://www.instagram.com/your_instagram_profile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.youtube.com/your_youtube_channel" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+       <a href="https://www.linkedin.com/in/osura-samoda-51566927a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+       <p class="container float-end mb-1">
+           <a href="#">Back to top</a>
+       </p>
+   </div>
+</footer>
+
+     
+   </footer>
+   <!-- Footer End -->
+   
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book Tour</title>
+	<link rel="stylesheet" type="text/css" href="style/book.css">
+
+</head>
+
+
+<h3>Booking Form</h3>
+<style>
+	body {
+		.backGround {
+			background-image: url("images/sigiri.jpg");
+			position: fixed;
+			height: 100%;
+			top: 0;
+			left: 0;
+			width: 100%;
+			min-height: 100vh;
+			background-repeat: repeat;
+			background-size: cover;
+			z-index: -1;
+			filter: blur(2px);
+		}
+	}
+</style>
+
+<body>
+	
+	<div class="backGround"></div>
+	<br>
+	<div class="container">
+		<form action="BookSaveServlet" method="post">
+
+			<label for="checkin">Name</label><br>
+			<input type="text" id="Fname" name="Fname" placeholder="Frist name" required>
+			<input type="text" id="Lname" name="Lname" placeholder="Last name" required>
+
+			<label for="checkin">Your Address</address></label><br>
+			<input type="text" id="address" name="address" placeholder="address" required><br>
+
+			<label for="checkin">Where you visit </address></label><br>
+			<input type="text" id="city" name="city" placeholder="City" required>
+
+			<input type="text" id="state" name="state" placeholder="State" required>
+
+			<input type="text" id="postalcode" name="postalcode" placeholder="Postalcode" required>
+
+			<input type="text" id="country" name="country" placeholder="country" required>
+			
+			<label for="checkin">Your</address></label><br>
+			<input type="text" id="email" name="email" placeholder="Email" required>
+
+			<input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+			<label for="checkin">Check-in Date:</label>
+			<input type="date" id="checkin" name="checkin" placeholder="Select check-in date" required>
+
+			<label for="checkout">Check-out Date:</label>
+			<input type="date" id="checkout" name="checkout" placeholder="Select check-out date" required>
+
+			<label for="children">Number of persons:</label>
+			<input type="number" id="person" name="person" min="0" required>
+
+			<label for="roomtype">Vehicle Type:</label>
+			<select id="roomtype" name="roomtype" required>
+				<option value="single">Bicycle</option>
+				<option value="double">Tuk tuk</option>
+				<option value="suite">Small Van</option>
+				<option value="suite">Highroof Van</option>
+				<option value="suite">High Luxery Bus</option>
+				<option value="suite">Other</option>
+			</select>
+
+			<button type="submit">Book Now</button>
+			<a href="BookViewServlet">View Books</a>
+		</form>
+	</div>
+</body>
+
+</html>
